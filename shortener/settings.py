@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db/shortener.sqlite',
+        'NAME': 'shortener.sqlite',
         'USER': '',
         'PASSWORD': '',
         'HOST': '',
