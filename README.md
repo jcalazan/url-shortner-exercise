@@ -6,11 +6,11 @@ A very simple URL shortener written in Python/Django.
 Installation
 ------------
 1. Install all 3rd-party libs with pip:
-<i>pip install -r requirements.txt</>
+<i>pip install -r requirements.txt</i>
 2. Run syncdb.
 <i>python manage.py syncdb</i>
 3. Run the local web server.
-<i>python manage.py runserver</>
+<i>python manage.py runserver</i>
 
 
 Usage
