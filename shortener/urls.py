@@ -1,9 +1,13 @@
 from django.conf.urls import patterns, include, url
-from web.views import go
+from django.contrib import admin
+admin.autodiscover()
+
+from web.views import go, shorten
 
 
 urlpatterns = patterns('',
+    url(r'^$', shorten),
     url(r'^web/', include('web.urls')),
-   (r'^.*/?$', go),
-
+    url(r'^admin/', include(admin.site.urls)),
+    (r'^.*/?$', go),
 )

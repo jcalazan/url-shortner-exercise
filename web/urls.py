@@ -1,7 +1,12 @@
-from django.conf.urls import patterns
-from web.views import shorten
+from django.conf.urls import patterns, url
+
+from .views import shorten, go
 
 
 urlpatterns = patterns('',
-       (r'^shorten$', shorten),
+       url(
+           regex=r'^shorten/',
+           view=shorten,
+           name='shorten'
+       ),
 )
